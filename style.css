@@ -3,10 +3,8 @@ body {
   padding: 0;
   font-family:'Roboto';
   font-size: 18px;  
-  background: linear-gradient(45deg,#192428,#192428);
-  background-size: 600% 600%;
-  animation: gradientAnimation 15s ease infinite;
-  }
+  /* background-size: cover; ` */
+     }
 
 @keyframes gradientAnimation {
   0% {
@@ -53,7 +51,7 @@ body {
   margin-bottom: 20px;
 }
 
-.profile-description {
+.message {
   line-height: 1.6;
   padding-left: 5;
   padding-right:5;
@@ -64,14 +62,16 @@ body {
    
   
  }
-.contact-info {
+.last-sign {
   margin-top: 20px;
   letter-spacing: 1.0px; 
+  line-height: 1.5;
 }
 
-.contact-info p {
+.last-sign p {
   margin: 5px 0;
   letter-spacing: 1.0px; 
+  line-height: 1.5;
 }
 
 .background-img {
@@ -80,6 +80,7 @@ height: 100vh;
 background-position: center;
 background-size: cover;
 background-image: linear-gradient(150deg,rgba(75, 34, 5, 0.4),rgba(5, 10, 46, 0.4)),url(scenery1.jpg);
+
 }
 
 .background-img-overlay {
@@ -92,7 +93,6 @@ justify-content: center;
 align-items: center;
 color: white;
 letter-spacing: 5px;
-
 }
  @keyframes glow {
       0% {
@@ -128,23 +128,27 @@ animation: glow 1s infinite;     }
  radial-gradient(6px 6px at 150px 400px, #fff, transparent),
  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
  background-size: 650px 650px;
- animation: snowAnimation 6s linear ;
+ animation: snowAnimation 9s linear ;
  animation-iteration-count: infinite;
+ height: 100vh;
+ width: 100%;
+
 }
+
 
 .snow:after{
 margin-left: -250px;
 opacity: 0.5;
 filter: blur(2px);
 animation-direction: reverse;
-animation-duration: 9s;
+animation-duration: 20s;
 }
 .snow:before{
 margin-left: -350px;
 opacity: 0.7;
 filter: blur(2px);
 animation-direction: reverse;
-animation-duration: 12s;
+animation-duration: 20s;
 
 }
 
