@@ -127,7 +127,7 @@ animation: glow 1s infinite;     }
  radial-gradient(6px 6px at 150px 400px, #fff, transparent),
  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
  background-size: 650px 650px;
- animation: snowAnimation 3s linear ;
+ animation: snowAnimation 6s linear ;
  animation-iteration-count: infinite;
 }
 
