@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Roboto';
+  font-size: 18px;  
   background: linear-gradient(45deg,#192428,#192428);
   background-size: 600% 600%;
   animation: gradientAnimation 15s ease infinite;
@@ -19,7 +20,7 @@ body {
   }
 }
 
-.profile-container {
+.profile-container { 
   max-width: 800px;
   margin: 50px auto;
   background: linear-gradient(150deg,rgba(75, 34, 5, 0.4),rgba(5, 10, 46, 0.4));
@@ -39,7 +40,6 @@ body {
   background: url(target.jpg);
   background-size: cover; 
   background-position: center:
-  max-width: 100%;
 }
 
 .profile-name {
@@ -59,14 +59,18 @@ body {
   padding-right:5;
   animation: glow 3s infinite alternate;  
   line-height: 2.0;
-  word-spacing: 2px;
-}
+  display: inline-block;
+  letter-spacing: 1.0px; 
+  
+ }
 .contact-info {
   margin-top: 20px;
+  letter-spacing: 1.0px; 
 }
 
 .contact-info p {
   margin: 5px 0;
+  letter-spacing: 1.0px; 
 }
 
 .background-img {
@@ -103,4 +107,5 @@ letter-spacing: 5px;
 
 .glow-text:hover {
 animation: glow 1s infinite;     }
+
 
