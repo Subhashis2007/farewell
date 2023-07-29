@@ -38,28 +38,12 @@ h1:hover span{
 svg text {
   font-family: Lora;
   letter-spacing: .15em;
-  stroke: #57f455;
+  stroke: #d3eaf4;
   font-size: 3.7em;
   font-weight: 700;
   stroke-width: 3;
  
   animation: textAnimate 3s infinite alternate;
-  
-}
-
-@keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset:  20%;
-    fill: rgb(69, 227, 238)
-
-  }
-  
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -50%;
-    fill: hsla(189, 68%, 75%,0%)
-  }
   
 }
 
@@ -69,7 +53,7 @@ p {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   /* text-transform: uppercase; */
-   background: linear-gradient(90deg, #880088, #fff, #880088); 
+   background: linear-gradient(90deg, #748895, #d3eaf4, #748895); 
   letter-spacing: 6px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -80,6 +64,20 @@ p {
   position: relative;
 }
 
+@keyframes textAnimate {
+  0% {
+    opacity: 0; /* Start with fully transparent */
+    fill: rgb(69, 227, 238);
+  }
+  50% {
+    opacity: 1; /* Reach fully opaque at 50% of animation */
+    fill: rgb(69, 227, 238);
+  }
+  100% {
+    opacity: 0; /* End with fully transparent again */
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
 @keyframes shine {
   0% {
     background-position-x: -500%;
