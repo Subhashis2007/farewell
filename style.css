@@ -58,9 +58,10 @@ body {
   padding-left: 5;
   padding-right:5;
   animation: glow 3s infinite alternate;  
-  line-height: 2.0;
+  line-height: 1.5;
   display: inline-block;
-  letter-spacing: 1.0px; 
+  letter-spacing: 1.0px;
+   
   
  }
 .contact-info {
